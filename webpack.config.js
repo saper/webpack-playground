@@ -1,21 +1,21 @@
 var webpack            = require('webpack');
 var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 var bourbon            = require('node-bourbon').includePaths;
-var RootStyles         = './src/Root/styles';
+var RootStyles         = './src/styles';
 
 var config = {
   entry: {
-    WebApp: [ 'webpack/hot/dev-server', './src/Root/webapp.js' ],
-    WebSite: [ 'webpack/hot/dev-server', './src/Root/website.js' ]
+    WebApp: [ 'webpack/hot/dev-server', './src/webapp.js' ],
+    WebSite: [ 'webpack/hot/dev-server', './src/website.js' ]
   },
   output: {
-    path: './dist',
+    path: './static',
     filename: '[name].js',
     publicPath: '/'
   },
   module: {
     loaders: [
-      { test: /\.jsx$/, exclude: /node_modules/, loader: 'babel' },
+      { test: /\.jsx$/, loader: 'babel' },
       { test: /\.js$/, loader: 'babel' },
       { test: /\.scss$/, loader: 'style!css!sass?outputStyle=expanded&' +
         'includePaths[]=' + bourbon + "&" +
@@ -25,7 +25,7 @@ var config = {
     ]
   },
   resolve: {
-    modulesDirectories: ['node_modules', 'bower_components', './src/Root'],
+    modulesDirectories: ['node_modules', 'bower_components'],
     extensions: ['', '.js', '.jsx']
   },
   plugins: [
@@ -34,7 +34,7 @@ var config = {
   ],
   devServer: {
     port: 3000,
-    contentBase: './src',
+    contentBase: './static',
     hot: true,
     lazy: false,
     progress: true,

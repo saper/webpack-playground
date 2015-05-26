@@ -2,8 +2,8 @@ import React from 'react';
 
 // require('./styles/commons.scss');
 
-import TopBar from '../Modules/TopBar/TopBar';
-import StatusBar from '../Modules/StatusBar/StatusBar';
+import Header from './modules/Header/Header';
+import Footer from './modules/Footer/Footer';
 
 // Dataset
 var data = [
@@ -19,9 +19,9 @@ export class RootComponent extends React.Component {
   render() {
     return (
       <div>
-        <TopBar />
-        WebApp Content
-        <StatusBar />
+        <Header />
+        WebSite Content
+        <Footer />
       </div>
     );
   }
