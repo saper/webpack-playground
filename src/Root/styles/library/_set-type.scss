@@ -1,0 +1,37 @@
+// Set Type
+// ----------------------------------------------
+
+@mixin set-type-h {
+  font-size: $font-h;
+  line-height: $line-h;
+}
+
+@mixin set-type-xxl {
+  font-size: $font-xxl;
+  line-height: $line-xxl;
+}
+
+@mixin set-type-xl {
+  font-size: $font-xl;
+  line-height: $line-xl;
+}
+
+@mixin set-type-l {
+  font-size: $font-l;
+  line-height: $line-l;
+}
+
+@mixin set-type-m {
+  font-size: $font-m;
+  line-height: $line-m;
+}
+
+@mixin set-type-s {
+  font-size: $font-s;
+  line-height: $line-s;
+}
+
+@mixin set-type-xs {
+  font-size: $font-xs;
+  line-height: $line-xs;
+}
