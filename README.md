@@ -1,8 +1,7 @@
-# Playground
+# Webpack Playground
 
-## Installation
+## Installation & Running
 
 ```js
-npm install
 npm start
 ```
