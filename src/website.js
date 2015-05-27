@@ -1,6 +1,6 @@
 import React from 'react';
 
-// require('./styles/commons.scss');
+require('./styles/commons.scss');
 
 import Header from './modules/Header/Header';
 import Footer from './modules/Footer/Footer';

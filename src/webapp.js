@@ -1,6 +1,6 @@
 import React from 'react';
 
-// require('./styles/commons.scss');
+require('./styles/commons.scss');
 
 import TopBar from './modules/TopBar/TopBar';
 import StatusBar from './modules/StatusBar/StatusBar';

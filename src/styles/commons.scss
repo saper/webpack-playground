@@ -1,16 +1,7 @@
-// Reset
-@import "reset";
-
-// Config
 @import "config";
 
-// Library
-@import "library/position";
-@import "library/set-size";
-@import "library/set-type";
-@import "library/truncate";
-
 // Elements
+@import "elements/reset";
 @import "elements/a";
 @import "elements/body";
 @import "elements/html";
